@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "61431497138",
+    "project_id": "smartcontent-a2454",
+    "storage_bucket": "smartcontent-a2454.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:61431497138:android:69aa4cfb05b8af863b64ab",
+        "android_client_info": {
+          "package_name": "com.example.a3gradesmartcontent"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZMaM-gWSJMhLtkC1YppP7o-k0-bChOFs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
