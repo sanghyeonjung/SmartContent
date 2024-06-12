@@ -9,7 +9,9 @@ import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import com.example.a3gradesmartcontent.R
+import com.google.firebase.Firebase
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.firestore.firestore
 
 class LoginActivity : AppCompatActivity() {
     var auth: FirebaseAuth = FirebaseAuth.getInstance()
@@ -63,13 +65,10 @@ class LoginActivity : AppCompatActivity() {
             .addOnCompleteListener(this) {
                 if (it.isSuccessful) {
                     val user = auth?.currentUser
-                    /*val db = Firebase.firestore
+                    val db = Firebase.firestore
                     db.collection("user")
                         .document(UtilCode.getInstance().uid!!)
-                        .set(hashMapOf("id" to "${emailEditText.text.toString().trim()}",
-                            "score" to "0"))
-
-                     */
+                        .set(hashMapOf("id" to "${emailEditText.text.toString().trim()}"))
                     Toast.makeText(this, "Authentication success.", Toast.LENGTH_SHORT).show()
                 } else {
                     Toast.makeText(
