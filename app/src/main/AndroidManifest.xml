@@ -13,10 +13,10 @@
         android:theme="@style/Theme._3GradeSmartContent"
         tools:targetApi="31">
         <activity
-            android:name=".SplashActivity"
+            android:name=".Login.SplashActivity"
             android:exported="false" />
         <activity
-            android:name=".LoginActivity"
+            android:name=".Login.LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -28,6 +28,8 @@
             android:name=".MainActivity"
             android:exported="false">
         </activity>
+
     </application>
+    <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>

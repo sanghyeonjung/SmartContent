@@ -4,6 +4,9 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.example.a3gradesmartcontent.databinding.ActivityMainBinding
+import com.example.a3gradesmartcontent.fragment.CommunityFragment
+import com.example.a3gradesmartcontent.fragment.GptFragment
+import com.example.a3gradesmartcontent.fragment.JobsFragment
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -14,7 +17,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         // 첫 번째 프래그먼트로 ChatGPTFragment를 설정합니다.
-        supportFragmentManager.beginTransaction().add(binding.frameContainer.id, ChatgptFragment()).commit()
+        supportFragmentManager.beginTransaction().add(binding.frameContainer.id, GptFragment()).commit()
 
         binding.bottomNavigation.setOnItemSelectedListener { item ->
             when (item.itemId) {
@@ -22,7 +25,7 @@ class MainActivity : AppCompatActivity() {
                     replaceFragment(CommunityFragment())
                 }
                 R.id.navigation_chatgpt -> {
-                    replaceFragment(ChatgptFragment())
+                    replaceFragment(GptFragment())
                 }
                 R.id.navigation_job -> {
                     replaceFragment(JobsFragment())
