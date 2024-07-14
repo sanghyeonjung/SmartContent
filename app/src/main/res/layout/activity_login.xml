@@ -6,11 +6,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Login.LoginActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/logingroup"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="62dp" />
+
     <ImageView
         android:id="@+id/imageviewLogoLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="147dp"
+        android:layout_marginTop="270dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -20,7 +28,7 @@
         android:layout_width="197dp"
         android:layout_height="54dp"
         android:layout_marginTop="89dp"
-        android:hint="e-mail"
+        android:hint="이메일"
         android:inputType="textEmailAddress"
         android:paddingLeft="20dp"
         android:textColor="#223253"
@@ -35,7 +43,7 @@
         android:layout_width="197dp"
         android:layout_height="54dp"
         android:layout_marginTop="9dp"
-        android:hint="password"
+        android:hint="비밀번호"
         android:inputType="textPassword"
         android:paddingLeft="20dp"
         android:textColor="#223253"
@@ -49,7 +57,7 @@
         android:id="@+id/signInButton"
         android:layout_width="197dp"
         android:layout_height="54dp"
-        android:layout_marginTop="74dp"
+        android:layout_marginTop="50dp"
         android:text="로그인"
         android:textColor="#E5EDE8"
         android:textSize="20sp"

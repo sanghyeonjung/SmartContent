@@ -5,7 +5,7 @@
         android:title="Community" />
     <item
         android:id="@+id/navigation_chatgpt"
-        android:title="ChatGPT" />
+        android:title="Gemini" />
     <item
         android:id="@+id/navigation_job"
         android:title="Jobs" />
